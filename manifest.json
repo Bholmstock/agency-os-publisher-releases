@@ -1,0 +1,16 @@
+{
+  "slug": "agency-os-publisher",
+  "name": "Agency OS Approved Publisher",
+  "version": "0.5.1",
+  "protocolVersion": 3,
+  "zipUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/download/v0.5.1/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/tag/v0.5.1",
+  "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
+  "sha256": "3120e56b98adc0e8fdaf6009312a7b879593803bf4f0fa9d6efbcfa779a2c33f",
+  "releaseDate": "2026-09-17",
+  "requiresWordPress": "6.0",
+  "requiresPhp": "7.4",
+  "testedWordPress": "6.0",
+  "hostingConfigured": true,
+  "notes": "Applies explicitly approved website changes and verifies their saved values. Adds authenticated, non-mutating publishing preflight."
+}

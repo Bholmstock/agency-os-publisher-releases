@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.2",
+  "version": "0.5.4",
   "protocolVersion": 3,
-  "zipUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/download/v0.5.2/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/tag/v0.5.2",
+  "zipUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/download/v0.5.4/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/tag/v0.5.4",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "8318afd8060596e479adc00919c9a290d7a319bd170a0b7b6c9d42d0f2f170bd",
-  "releaseDate": "2026-09-18",
+  "sha256": "2ebe78a885bd34439fb0be8def438913f082db76766ad055fd5e82436673a36d",
+  "releaseDate": "2026-09-28",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Applies explicitly approved website changes and verifies their saved values. Adds authenticated, non-mutating publishing preflight."
+  "notes": "Publishes and verifies approved articles before deferred thumbnail generation. Future Agency OS Publisher releases install automatically through WordPress and remain checksum-verified."
 }

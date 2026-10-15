@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.5/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.5/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.6/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.6/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "924d04594bbd472533c105af7b0d6de48f79c57fc4c5a76d6a1cf49568fb2ff2",
+  "sha256": "5d94029fbd983af5a1661d88e7e8e61dd28a0d2b80c043f190ec289d440059b9",
   "releaseDate": "2026-10-15",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Adds bounded metadata automation support and verified restoration of the original search title and description, including site defaults. Existing article publishing and deferred thumbnail generation are retained."
+  "notes": "Repairs native WordPress update discovery by supplying the required version field. Retains checksum verification, scoped automatic updates, metadata restoration and deferred image processing."
 }

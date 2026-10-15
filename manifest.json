@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "protocolVersion": 3,
-  "zipUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/download/v0.5.4/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/releases/tag/v0.5.4",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.5/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.5/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "2ebe78a885bd34439fb0be8def438913f082db76766ad055fd5e82436673a36d",
-  "releaseDate": "2026-09-28",
+  "sha256": "924d04594bbd472533c105af7b0d6de48f79c57fc4c5a76d6a1cf49568fb2ff2",
+  "releaseDate": "2026-10-15",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Publishes and verifies approved articles before deferred thumbnail generation. Future Agency OS Publisher releases install automatically through WordPress and remain checksum-verified."
+  "notes": "Adds bounded metadata automation support and verified restoration of the original search title and description, including site defaults. Existing article publishing and deferred thumbnail generation are retained."
 }

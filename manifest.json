@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.6/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.6/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.7/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.7/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "5d94029fbd983af5a1661d88e7e8e61dd28a0d2b80c043f190ec289d440059b9",
-  "releaseDate": "2026-10-15",
+  "sha256": "58ad88d8edea6a20a8a1564479f78c84332f8686bfc34334d5489a3e40999ca2",
+  "releaseDate": "2026-10-21",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Repairs native WordPress update discovery by supplying the required version field. Retains checksum verification, scoped automatic updates, metadata restoration and deferred image processing."
+  "notes": "Adds a read-only route that reports Rank Math's official score for a published post once Rank Math has calculated it. No change to publishing, checking or updating. Retains checksum verification, scoped automatic updates, metadata restoration and deferred image processing."
 }

@@ -406,7 +406,7 @@ function aos_native_bound_content($html,$media,$job){
  foreach($media as $index=>$m){
   $owned=$saved[$index]??null;$asset=$m['assetId']??'';
   if(!is_array($m)||!is_array($owned)||!is_string($asset)||!preg_match('/^[a-zA-Z0-9_-]+$/D',$asset)||($m['sha256']??null)!==($owned['sha256']??null)||($m['alt']??null)!==($owned['alt']??null)||($m['role']??null)!==($owned['role']??null))return new WP_Error('native_preview_changed','The approved page images changed. Prepare a new preview.',array('status'=>409));
-  $url=wp_get_attachment_url((int)$owned['attachmentId']);
+  $url=function_exists('wp_get_original_image_url')?wp_get_original_image_url((int)$owned['attachmentId']):wp_get_attachment_url((int)$owned['attachmentId']);
   if(!$url)return new WP_Error('native_preview_changed','A prepared page image is unavailable. Prepare a new preview.',array('status'=>409));
   $html=str_replace('https://agency-os-image.invalid/'.$asset,esc_url($url),$html);
  }
@@ -442,7 +442,7 @@ function aos_preflight($r){
  $media=$in['media']??array();$mediaOk=true;$mediaMessage='';
  if(!is_array($media)||count($media)>10){$mediaOk=false;$mediaMessage='Too many images.';}
  elseif(count($media)&&!current_user_can('upload_files')){$mediaOk=false;$mediaMessage='Image upload permission is required.';}
- else foreach($media as $m){$bytes=base64_decode($m['base64']??'',true);$size=$bytes?getimagesizefromstring($bytes):false;if(!$bytes||strlen($bytes)>12000000||!$size||!in_array($size['mime'],array('image/png','image/jpeg','image/webp'),true)||$size['mime']!==($m['mimeType']??'')||hash('sha256',$bytes)!==($m['sha256']??'')){$mediaOk=false;$mediaMessage='An approved image is invalid or inaccessible.';break;}}
+ else foreach($media as $m){$bytes=base64_decode($m['base64']??'',true);$size=$bytes?@getimagesizefromstring($bytes):false;if(!$bytes||strlen($bytes)>12000000||!$size||!in_array($size['mime'],array('image/png','image/jpeg','image/webp'),true)||$size['mime']!==($m['mimeType']??'')||hash('sha256',$bytes)!==($m['sha256']??'')){$mediaOk=false;$mediaMessage='An approved image is invalid or inaccessible.';break;}}
  $checks[]=array('code'=>'media','ok'=>$mediaOk,'message'=>$mediaMessage);
  // 0.5.0.1 — the exact content WordPress would accept: the same
  // normalisation and wp_kses_post() sanitisation aos_safe_html() judges
@@ -616,7 +616,7 @@ function aos_apply($r,$draftOnly=false){
   if($layoutRequested==='full_width'){$mech=aos_layout_mechanism();$layoutMechanism=$mech['mechanism'];$expected['layout']=$mech['mechanism']?$mech['value']:'';}
   else $expected['layout']='';
  }
- $media=$in['media']??array();if(!is_array($media)||count($media)>10)return new WP_Error('media','Too many images',array('status'=>400));if(count($media)&&!current_user_can('upload_files'))return new WP_Error('media','Image upload permission is required',array('status'=>403));foreach($media as $m){$bytes=base64_decode($m['base64']??'',true);$size=$bytes?getimagesizefromstring($bytes):false;if(!$bytes||strlen($bytes)>12000000||!$size||!in_array($size['mime'],array('image/png','image/jpeg','image/webp'),true)||$size['mime']!==($m['mimeType']??'')||hash('sha256',$bytes)!==($m['sha256']??''))return new WP_Error('media','An approved image is invalid or has changed',array('status'=>400));}
+ $media=$in['media']??array();if(!is_array($media)||count($media)>10)return new WP_Error('media','Too many images',array('status'=>400));if(count($media)&&!current_user_can('upload_files'))return new WP_Error('media','Image upload permission is required',array('status'=>403));foreach($media as $m){$bytes=base64_decode($m['base64']??'',true);$size=$bytes?@getimagesizefromstring($bytes):false;if(!$bytes||strlen($bytes)>12000000||!$size||!in_array($size['mime'],array('image/png','image/jpeg','image/webp'),true)||$size['mime']!==($m['mimeType']??'')||hash('sha256',$bytes)!==($m['sha256']??''))return new WP_Error('media','An approved image is invalid or has changed',array('status'=>400));}
  $j=array('jobId'=>$in['jobId'],'proposalHash'=>$in['proposalHash'],'postId'=>$id,'url'=>$url,'before'=>$s,'expected'=>$expected,'layoutRequested'=>$layoutRequested,'layoutMechanism'=>$layoutMechanism);if($automatic){$j['metadataFields']=$metadataFields;if($restore)$j['restoreOf']=$in['restoreOf'];}if($new){$j['newTitle']=$new['title'];$j['newSlug']=$new['slug'];}if($new&&($new['nativePageContractVersion']??null)===1)$j['nativePage']=array('contractVersion'=>1,'builder'=>'divi','builderVersion'=>$new['builderVersion'],'contentFormat'=>'divi_shortcodes');if($draftOnly)$j['nativeDraft']=true;
  $lock='aos_lock_'.hash('sha256',$url);if(!add_option($lock,$in['jobId'],'',false))return new WP_Error('busy','Another approved change is being applied to this page',array('status'=>409));
  try{

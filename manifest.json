@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.8.1",
+  "version": "0.6.0",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.8.1/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.8.1/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.0/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.0/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "1b62f5f21047a637db496e72e550c1ab2cbb2789936f380861082decaf52ca98",
+  "sha256": "1cdb335a6c5e17b1843f96622dd014a75783e4c62f4a79df8fed106874ff4bad",
   "releaseDate": "2026-11-23",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Adds per-article author bylines without changing WordPress user accounts, including display and article schema support. Retains authenticated template rehearsal and backed-up mobile layout repairs. Retains official Rank Math score reporting, checksum-verified updates, metadata restoration and deferred image processing."
+  "notes": "Adds native Divi 4 page-builder detection, editable service pages, private draft previews and verification of the same draft at publication. Retains per-article author bylines, blog publishing, Rank Math reporting, checksum-verified updates and metadata restoration."
 }

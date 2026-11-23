@@ -1,0 +1,16 @@
+{
+  "slug": "agency-os-publisher",
+  "name": "Agency OS Approved Publisher",
+  "version": "0.6.5",
+  "protocolVersion": 3,
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.5/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.5/README.md",
+  "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
+  "sha256": "366757ea41b713829a04796c102f502dd475ccb85d34c945bbbccde4b1769dc2",
+  "releaseDate": "2026-11-23",
+  "requiresWordPress": "6.0",
+  "requiresPhp": "7.4",
+  "testedWordPress": "6.0",
+  "hostingConfigured": true,
+  "notes": "Adds bounded mobile specification-table fitting. Retains responsive header and control repairs, corrected native-page media preflight, owned-draft and image-integrity protections, native Divi layouts and checksum-verified updates."
+}

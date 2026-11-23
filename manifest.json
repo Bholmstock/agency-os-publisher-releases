@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.4/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.4/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.5/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.5/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "f562932c1889fec1cdfc95d9bf8970e7008f91fad98b9045a78d4da47f5f8148",
+  "sha256": "366757ea41b713829a04796c102f502dd475ccb85d34c945bbbccde4b1769dc2",
   "releaseDate": "2026-11-23",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Corrects repeated native-page preflight with approved uploaded media. Retains exact owned-draft, image-integrity and edit protections, native Divi layouts, responsive repairs and checksum-verified updates."
+  "notes": "Adds bounded mobile specification-table fitting. Retains responsive header and control repairs, corrected native-page media preflight, owned-draft and image-integrity protections, native Divi layouts and checksum-verified updates."
 }

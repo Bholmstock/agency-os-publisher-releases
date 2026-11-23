@@ -1,0 +1,16 @@
+{
+  "slug": "agency-os-publisher",
+  "name": "Agency OS Approved Publisher",
+  "version": "0.6.2",
+  "protocolVersion": 3,
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.2/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.2/README.md",
+  "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
+  "sha256": "64bfa5e51470007c862b02dcda04a88366d8dc53f51b985312089aa40c5a020d",
+  "releaseDate": "2026-11-23",
+  "requiresWordPress": "6.0",
+  "requiresPhp": "7.4",
+  "testedWordPress": "6.0",
+  "hostingConfigured": true,
+  "notes": "Adds native Divi 4 page-builder detection, editable service pages, private draft previews and verification of the same draft at publication. Retains per-article author bylines, blog publishing, Rank Math reporting, checksum-verified updates and metadata restoration."
+}

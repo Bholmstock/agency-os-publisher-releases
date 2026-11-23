@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.5.8",
+  "version": "0.5.8.1",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.8/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.8/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.5.8.1/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.5.8.1/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "96e3e64c0ee7e3227b481de3fd4e3d51d6226ccd4329d01f99c480e80df31063",
+  "sha256": "1b62f5f21047a637db496e72e550c1ab2cbb2789936f380861082decaf52ca98",
   "releaseDate": "2026-11-23",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Adds authenticated read-only template rehearsal and bounded, backed-up mobile layout repairs. Retains official Rank Math score reporting, checksum-verified updates, metadata restoration and deferred image processing."
+  "notes": "Adds per-article author bylines without changing WordPress user accounts, including display and article schema support. Retains authenticated template rehearsal and backed-up mobile layout repairs. Retains official Rank Math score reporting, checksum-verified updates, metadata restoration and deferred image processing."
 }

@@ -1,16 +1,16 @@
 {
   "slug": "agency-os-publisher",
   "name": "Agency OS Approved Publisher",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "protocolVersion": 3,
-  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.5/agency-os-publisher.zip",
-  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.5/README.md",
+  "zipUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/releases/v0.6.6/agency-os-publisher.zip",
+  "detailsUrl": "https://github.com/Bholmstock/agency-os-publisher-releases/blob/main/releases/v0.6.6/README.md",
   "manifestUrl": "https://raw.githubusercontent.com/Bholmstock/agency-os-publisher-releases/main/manifest.json",
-  "sha256": "366757ea41b713829a04796c102f502dd475ccb85d34c945bbbccde4b1769dc2",
-  "releaseDate": "2026-11-23",
+  "sha256": "8a8edf31b84641b598de9610fc18ad8eb548097f174af95d4978e5be27447a9f",
+  "releaseDate": "2026-11-24",
   "requiresWordPress": "6.0",
   "requiresPhp": "7.4",
   "testedWordPress": "6.0",
   "hostingConfigured": true,
-  "notes": "Adds bounded mobile specification-table fitting. Retains responsive header and control repairs, corrected native-page media preflight, owned-draft and image-integrity protections, native Divi layouts and checksum-verified updates."
+  "notes": "Re-preparing a native page now moves Atlas’s own earlier private draft at the same address to the WordPress Trash (never deleted, restored on any failure), so Prepare again no longer stops on it. Retains bounded mobile specification-table fitting, responsive header and control repairs, native-page media preflight, owned-draft and image-integrity protections, native Divi layouts and checksum-verified updates."
 }
